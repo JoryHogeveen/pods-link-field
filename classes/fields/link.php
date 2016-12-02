@@ -77,6 +77,12 @@ class PodsField_Link extends PodsField_Website {
 				'type'       => 'boolean',
 				'dependency' => true
 			),
+			self::$type . '_default_target'      => array(
+				'label'      => __( 'Open in a new window by default?', 'pods' ),
+				'default'    => 0,
+				'type'       => 'boolean',
+				'dependency' => false
+			),
 			'output_options'                   => array(
 				'label' => __( 'Link Text Output Options', 'pods' ),
 				'group' => array(
@@ -91,12 +97,6 @@ class PodsField_Link extends PodsField_Website {
 						'default'    => 0,
 						'type'       => 'boolean',
 						'dependency' => true
-					),
-					self::$type . '_default_target'      => array(
-						'label'      => __( 'Open in a new window by default?', 'pods' ),
-						'default'    => 0,
-						'type'       => 'boolean',
-						'dependency' => false
 					)
 				)
 			),
